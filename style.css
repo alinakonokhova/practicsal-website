@@ -1,0 +1,160 @@
+/* ---------- GLOBAL ---------- */
+body {
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kedebideri', Arial, Helvetica, sans-serif;
+}
+
+/* FONTS */
+.kedebideri-regular {
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kedebideri-medium {
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.kedebideri-semibold {
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.kedebideri-bold {
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.kedebideri-extrabold {
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.kedebideri-black {
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* ---------- HEADER ---------- */
+.gd-header {
+    background: #2B2B2B;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* LEFT SIDE (logo + nav) */
+.gd-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 0 0 75px;
+}
+
+/* Logo */
+.gd-logo>svg {
+    width: 143px;
+    height: 32px;
+}
+
+/* Middle nav */
+.gd-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 10px 15px 12px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    letter-spacing: 1;
+    /* Remove default outline but restore on keyboard navigation */
+    outline: none;
+}
+
+button:hover {
+    background-color: #444444;
+    border-color: #272727;
+    border-radius: 8px;
+    /* GoDaddy blue hover */
+}
+
+button>i, .gd-right-item>a>i {
+    font-size: 10px;
+    transition: transform 0.2s ease;
+}
+
+/* RIGHT SIDE */
+.gd-right {
+    display: flex;
+    align-items: center;
+    padding-right: 90px;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 5px;
+}
+
+.gd-right-item {
+    padding: 8px 10px;
+    /* invisible padding area */
+    border-radius: 6px;
+    transition: background 0.25s ease;
+}
+
+.gd-right-item:hover {
+  background: #444444;   /* becomes visible on hover */
+}
+
+.gd-right a {
+    text-decoration: none;
+    color: white;
+}
+
+/* CART */
+.cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 13px;
+}
+
+.cart>i {
+    font-size: 20px;
+}
+
+.bubble {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: #14E0E0;
+    color: black;
+    font-size: 11px;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
