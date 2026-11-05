@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>What Are HTML and CSS? A Beginner's Guide | The Practical Website</title>
+
+  <meta name="description"
+    content="Learn what HTML and CSS are, how they work together, and how to use them to create the structure and design of a website.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-content">
+
+      <a href="index.html" class="logo">
+        <span class="logo-icon">P</span>
+        <span>The Practical Website</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#guides">Guides</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+
+      <a href="index.html#guides" class="button button-primary">
+        Start Learning
+      </a>
+
+    </div>
+  </header>
+
+
+  <!-- ARTICLE HERO -->
+  <section class="article-hero">
+    <div class="container">
+
+      <div class="article-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>HTML & CSS</span>
+      </div>
+
+      <span class="article-category">HTML & CSS • BEGINNER GUIDE</span>
+
+      <h1>What Are HTML and CSS?</h1>
+
+      <p class="article-intro">
+        HTML and CSS are two of the most important technologies
+        used to build websites. Learn what they do, how they work
+        together, and how you can use them to create your own pages.
+      </p>
+
+      <div class="article-meta">
+        <span>Beginner friendly</span>
+        <span>•</span>
+        <span>About 9 minutes to read</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ARTICLE LAYOUT -->
+  <main class="container article-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="article-sidebar">
+      <div class="toc-box">
+
+        <h3>On This Page</h3>
+
+        <a href="#introduction">Introduction</a>
+        <a href="#html">What is HTML?</a>
+        <a href="#html-example">HTML example</a>
+        <a href="#css">What is CSS?</a>
+        <a href="#css-example">CSS example</a>
+        <a href="#together">How they work together</a>
+        <a href="#javascript">What about JavaScript?</a>
+        <a href="#first-page">Create your first page</a>
+        <a href="#mistakes">Common beginner mistakes</a>
+        <a href="#summary">Key takeaways</a>
+
+      </div>
+    </aside>
+
+
+    <!-- ARTICLE CONTENT -->
+    <article class="article-content">
+
+
+      <!-- INTRODUCTION -->
+      <section id="introduction" class="article-section">
+
+        <h2>1. Introduction: The Building Blocks of Websites</h2>
+
+        <p>
+          Have you ever wondered how a website is created?
+          Every heading, paragraph, image, button and colorful
+          background needs instructions that tell the browser
+          how to display it.
+        </p>
+
+        <p>
+          Two technologies provide the foundation of most
+          websites: <strong>HTML</strong> and <strong>CSS</strong>.
+        </p>
+
+        <p>
+          HTML defines the content and structure of a web page.
+          CSS controls how that content looks.
+        </p>
+
+        <div class="article-note">
+          <strong>A simple way to remember:</strong>
+          HTML builds the structure. CSS designs the appearance.
+        </div>
+
+        <p>
+          You can write both HTML and CSS using a simple text
+          editor and open your work in a web browser.
+          You do not need expensive software to get started.
+        </p>
+
+      </section>
+
+
+      <!-- HTML -->
+      <section id="html" class="article-section">
+
+        <h2>2. What Is HTML?</h2>
+
+        <p>
+          <strong>HTML</strong> stands for
+          <strong>HyperText Markup Language</strong>.
+          It is the standard markup language used to structure
+          content on web pages.
+        </p>
+
+        <p>
+          HTML tells the browser what different parts of a page
+          represent. For example:
+        </p>
+
+        <ul>
+          <li>Headings and subheadings.</li>
+          <li>Paragraphs and other text.</li>
+          <li>Images and videos.</li>
+          <li>Links to other pages.</li>
+          <li>Lists and tables.</li>
+          <li>Forms and input fields.</li>
+        </ul>
+
+        <p>
+          HTML uses elements, usually written with opening
+          and closing tags.
+        </p>
+
+        <p>
+          For example, a paragraph is written like this:
+        </p>
+
+        <pre><code>&lt;p&gt;Welcome to my website!&lt;/p&gt;</code></pre>
+
+        <p>
+          The <code>&lt;p&gt;</code> tag marks the beginning
+          of a paragraph, while <code>&lt;/p&gt;</code> marks
+          its end. The text between them is the paragraph content.
+        </p>
+
+      </section>
+
+
+      <!-- HTML EXAMPLE -->
+      <section id="html-example" class="article-section">
+
+        <h2>3. A Simple HTML Example</h2>
+
+        <p>
+          Here is a small HTML page. It contains a heading,
+          a paragraph and a link.
+        </p>
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Welcome!&lt;/h1&gt;
+
+    &lt;p&gt;This is my first website.&lt;/p&gt;
+
+    &lt;a href="https://example.com"&gt;
+        Visit Example
+    &lt;/a&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <p>Let's understand the main parts:</p>
+
+        <ul>
+          <li>
+            <strong>&lt;!DOCTYPE html&gt;</strong> tells
+            the browser to use modern HTML standards.
+          </li>
+
+          <li>
+            <strong>&lt;html&gt;</strong> contains the
+            entire HTML document.
+          </li>
+
+          <li>
+            <strong>&lt;head&gt;</strong> contains information
+            about the page.
+          </li>
+
+          <li>
+            <strong>&lt;title&gt;</strong> sets the page title
+            shown in the browser tab.
+          </li>
+
+          <li>
+            <strong>&lt;body&gt;</strong> contains the page
+            content displayed in the browser.
+          </li>
+
+          <li>
+            <strong>&lt;h1&gt;</strong> creates a main heading.
+          </li>
+
+          <li>
+            <strong>&lt;p&gt;</strong> creates a paragraph.
+          </li>
+
+          <li>
+            <strong>&lt;a&gt;</strong> creates a link.
+          </li>
+        </ul>
+
+        <div class="article-note">
+          <strong>Remember:</strong>
+          HTML is not a programming language. It is a markup
+          language that describes the structure and meaning
+          of web content.
+        </div>
+
+      </section>
+
+
+      <!-- CSS -->
+      <section id="css" class="article-section">
+
+        <h2>4. What Is CSS?</h2>
+
+        <p>
+          <strong>CSS</strong> stands for
+          <strong>Cascading Style Sheets</strong>.
+          It is the language used to control the appearance
+          and layout of web pages.
+        </p>
+
+        <p>
+          Without CSS, a browser can still display HTML content,
+          but the page will usually look much simpler.
+        </p>
+
+        <p>CSS allows you to control things such as:</p>
+
+        <ul>
+          <li>Text colors and background colors.</li>
+          <li>Font families, sizes and weights.</li>
+          <li>Spacing between elements.</li>
+          <li>Page layouts and columns.</li>
+          <li>Borders, shadows and rounded corners.</li>
+          <li>How a website looks on phones and tablets.</li>
+        </ul>
+
+        <p>
+          CSS works by selecting HTML elements and applying
+          style rules to them.
+        </p>
+
+      </section>
+
+
+      <!-- CSS EXAMPLE -->
+      <section id="css-example" class="article-section">
+
+        <h2>5. A Simple CSS Example</h2>
+
+        <p>
+          Imagine that your HTML page has this heading:
+        </p>
+
+        <pre><code>&lt;h1&gt;Welcome to My Website&lt;/h1&gt;</code></pre>
+
+        <p>
+          You can use CSS to change its appearance:
+        </p>
+
+        <pre><code>h1 {
+    color: #ff6b00;
+    font-size: 36px;
+    text-align: center;
+}</code></pre>
+
+        <p>Here is what each instruction means:</p>
+
+        <ul>
+          <li>
+            <strong>h1</strong> selects all elements using
+            the h1 heading tag.
+          </li>
+
+          <li>
+            <strong>color</strong> changes the text color.
+          </li>
+
+          <li>
+            <strong>font-size</strong> changes the size
+            of the text.
+          </li>
+
+          <li>
+            <strong>text-align</strong> controls the
+            horizontal alignment of the text.
+          </li>
+        </ul>
+
+        <p>
+          The values inside the curly brackets are called
+          declarations. Each declaration contains a property
+          and a value.
+        </p>
+
+        <div class="article-note">
+          <strong>Tip:</strong>
+          CSS rules are written using a selector followed by
+          curly brackets containing one or more declarations.
+        </div>
+
+      </section>
+
+
+      <!-- TOGETHER -->
+      <section id="together" class="article-section">
+
+        <h2>6. How Do HTML and CSS Work Together?</h2>
+
+        <p>
+          HTML and CSS are designed to work together.
+          HTML provides the content, while CSS gives it
+          its visual design.
+        </p>
+
+        <p>For example, HTML creates this content:</p>
+
+        <pre><code>&lt;h1&gt;Learn Web Design&lt;/h1&gt;
+&lt;p&gt;Start building your first website.&lt;/p&gt;</code></pre>
+
+        <p>
+          CSS can then style the heading and paragraph:
+        </p>
+
+        <pre><code>h1 {
+    color: #070e20;
+    font-size: 32px;
+}
+
+p {
+    color: #4a5267;
+    font-size: 18px;
+    line-height: 1.7;
+}</code></pre>
+
+        <p>
+          The browser combines the HTML structure with the
+          CSS styling to display the finished page.
+        </p>
+
+        <div class="comparison-box">
+
+          <h3>HTML</h3>
+
+          <p>
+            Provides the structure and content:
+            headings, paragraphs, images and links.
+          </p>
+
+          <h3>CSS</h3>
+
+          <p>
+            Provides the design:
+            colors, typography, spacing and layout.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- JAVASCRIPT -->
+      <section id="javascript" class="article-section">
+
+        <h2>7. What About JavaScript?</h2>
+
+        <p>
+          HTML and CSS are not the only technologies used
+          to create websites.
+        </p>
+
+        <p>
+          <strong>JavaScript</strong> is a programming language
+          that adds interactive behavior to web pages.
+        </p>
+
+        <p>For example, JavaScript can:</p>
+
+        <ul>
+          <li>Open and close navigation menus.</li>
+          <li>Show messages when a visitor clicks a button.</li>
+          <li>Check information entered into a form.</li>
+          <li>Update parts of a page without reloading it.</li>
+          <li>Create interactive tools and applications.</li>
+        </ul>
+
+        <p>
+          Think of the three technologies this way:
+        </p>
+
+        <div class="comparison-box">
+
+          <h3>HTML — Structure</h3>
+          <p>What appears on the page.</p>
+
+          <h3>CSS — Design</h3>
+          <p>How the page looks.</p>
+
+          <h3>JavaScript — Behavior</h3>
+          <p>How the page responds to visitors.</p>
+
+        </div>
+
+        <p>
+          You can build many useful static websites with
+          HTML and CSS alone. JavaScript becomes useful
+          when you want to add more interactive features.
+        </p>
+
+      </section>
+
+
+      <!-- FIRST PAGE -->
+      <section id="first-page" class="article-section">
+
+        <h2>8. Create Your First HTML and CSS Page</h2>
+
+        <p>
+          The best way to understand HTML and CSS is to try
+          writing some code yourself.
+        </p>
+
+        <p>
+          You only need a text editor, such as Notepad,
+          and a web browser.
+        </p>
+
+        <h3>Step 1: Create an HTML file</h3>
+
+        <p>
+          Open Notepad and enter this code:
+        </p>
+
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My First Website&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Welcome to My Website!&lt;/h1&gt;
+
+    &lt;p&gt;I am learning HTML and CSS.&lt;/p&gt;
+
+    &lt;a href="https://example.com"&gt;
+        Visit Example
+    &lt;/a&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <p>
+          Save the file as <strong>index.html</strong>.
+          Make sure you select All Files as the file type.
+        </p>
+
+
+        <h3>Step 2: Create a CSS file</h3>
+
+        <p>
+          Open another Notepad window and enter:
+        </p>
+
+        <pre><code>body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #070e20;
+    padding: 40px;
+}
+
+h1 {
+    color: #ff6b00;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+a {
+    color: #ff6b00;
+}</code></pre>
+
+        <p>
+          Save this file as <strong>style.css</strong>
+          in the same folder as index.html.
+        </p>
+
+
+        <h3>Step 3: Open your website</h3>
+
+        <p>
+          Find index.html in your folder and double-click it.
+          Your browser should open the page and display
+          your heading, paragraph and link with your CSS styling.
+        </p>
+
+        <div class="article-note">
+          <strong>Important:</strong>
+          The HTML file connects to the CSS file using
+          <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>.
+          Both files must be in the same folder for this example
+          to work as written.
+        </div>
+
+      </section>
+
+
+      <!-- COMMON MISTAKES -->
+      <section id="mistakes" class="article-section">
+
+        <h2>9. Common Beginner Mistakes</h2>
+
+        <p>
+          When learning HTML and CSS, small mistakes are normal.
+          Here are a few things to watch for:
+        </p>
+
+        <h3>Forgetting to close HTML tags</h3>
+
+        <p>
+          Many HTML elements need both an opening and a closing
+          tag. For example:
+        </p>
+
+        <pre><code>&lt;p&gt;This is correct.&lt;/p&gt;</code></pre>
+
+        <h3>Using the wrong file extension</h3>
+
+        <p>
+          An HTML file should end with <strong>.html</strong>,
+          and a CSS file should end with <strong>.css</strong>.
+          Check that Notepad has not saved your file as
+          index.html.txt.
+        </p>
+
+        <h3>Connecting the wrong CSS filename</h3>
+
+        <p>
+          If your stylesheet is named style.css, the HTML
+          link must use exactly that filename.
+        </p>
+
+        <h3>Forgetting to save changes</h3>
+
+        <p>
+          After editing your files, save them and refresh
+          your browser to see the latest version.
+        </p>
+
+      </section>
+
+
+      <!-- SUMMARY -->
+      <section id="summary" class="article-section">
+
+        <h2>10. Key Takeaways</h2>
+
+        <p>
+          HTML and CSS are essential tools for building
+          and designing websites.
+        </p>
+
+        <ul>
+          <li>HTML stands for HyperText Markup Language.</li>
+          <li>HTML defines the structure and content of a page.</li>
+          <li>CSS stands for Cascading Style Sheets.</li>
+          <li>CSS controls the appearance and layout of a page.</li>
+          <li>HTML and CSS work together in the browser.</li>
+          <li>JavaScript adds interactive behavior.</li>
+          <li>You can start learning with free tools.</li>
+        </ul>
+
+        <p>
+          You now understand the basic technologies behind
+          many websites. The next step is to practice by
+          creating and styling your own pages.
+        </p>
+
+      </section>
+
+
+      <!-- NEXT GUIDE -->
+      <div class="next-guide">
+
+        <span class="article-category">KEEP LEARNING</span>
+
+        <h2>Understand the Whole Website</h2>
+
+        <p>
+          You have learned about HTML and CSS. Now explore
+          how domains and hosting make a website available
+          to visitors around the world.
+        </p>
+
+        <a href="hosting.html" class="button button-primary">
+          Learn About Web Hosting
+        </a>
+
+      </div>
+
+    </article>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <a href="index.html" class="logo">
+        <span class="logo-icon">P</span>
+        <span>The Practical Website</span>
+      </a>
+
+      <p>
+        Simple, practical guides to building better websites.
+      </p>
+
+      <span class="footer-copyright">
+        © 2026 The Practical Website
+      </span>
+
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Go to top">
+    ↑ Go Up
+  </button>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 300) {
+        backToTop.classList.add("show");
+      } else {
+        backToTop.classList.remove("show");
+      }
+    });
+
+    backToTop.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+</body>
+
+</html>

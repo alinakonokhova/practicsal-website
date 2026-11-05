@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>How Does a Website Work? A Beginner's Guide | The Practical Website</title>
+
+  <meta name="description"
+    content="Learn how websites work, how browsers and servers communicate, and how HTML, CSS, JavaScript, domains and hosting fit together.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-content">
+
+      <a href="index.html" class="logo">
+        <span class="logo-icon">P</span>
+        <span>The Practical Website</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#guides">Guides</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+
+      <a href="index.html#guides" class="button button-primary">
+        Start Learning
+      </a>
+
+    </div>
+  </header>
+
+
+  <!-- ARTICLE HERO -->
+  <section class="article-hero">
+    <div class="container">
+
+      <div class="article-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Website Basics</span>
+      </div>
+
+      <span class="article-category">WEBSITE BASICS • BEGINNER GUIDE</span>
+
+      <h1>How Does a Website Work?</h1>
+
+      <p class="article-intro">
+        Every time you open a website, several things happen behind
+        the scenes. Let's explore how browsers, servers, domains and
+        website files work together to bring a page to your screen.
+      </p>
+
+      <div class="article-meta">
+        <span>Beginner friendly</span>
+        <span>•</span>
+        <span>About 8 minutes to read</span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ARTICLE LAYOUT -->
+  <main class="container article-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="article-sidebar">
+      <div class="toc-box">
+
+        <h3>On This Page</h3>
+
+        <a href="#overview">The big picture</a>
+        <a href="#browser">What is a browser?</a>
+        <a href="#server">What is a server?</a>
+        <a href="#request">How a website loads</a>
+        <a href="#html-css-js">HTML, CSS and JavaScript</a>
+        <a href="#domain-dns">Domains and DNS</a>
+        <a href="#https">What is HTTPS?</a>
+        <a href="#put-together">How everything connects</a>
+        <a href="#summary">Key takeaways</a>
+
+      </div>
+    </aside>
+
+
+    <!-- ARTICLE CONTENT -->
+    <article class="article-content">
+
+      <section id="overview" class="article-section">
+
+        <h2>1. The Big Picture: How Does a Website Work?</h2>
+
+        <p>
+          A website is a collection of files and other resources
+          stored on a computer called a <strong>web server</strong>.
+          These files are delivered to visitors through the internet.
+        </p>
+
+        <p>
+          When you visit a website, your browser asks the server
+          for the information it needs. The server sends the files
+          back, and your browser displays the website on your screen.
+        </p>
+
+        <p>
+          You do not need to understand every technical detail
+          to build a website. However, understanding this basic
+          process makes website building much easier.
+        </p>
+
+        <div class="article-note">
+          <strong>Think of it this way:</strong>
+          A website is like a book stored in a library. Your browser
+          asks for the book, the server finds it, and the browser
+          displays its pages for you.
+        </div>
+
+      </section>
+
+
+      <section id="browser" class="article-section">
+
+        <h2>2. What Is a Web Browser?</h2>
+
+        <p>
+          A <strong>web browser</strong> is a program that lets you
+          visit websites and interact with them.
+        </p>
+
+        <p>Popular web browsers include:</p>
+
+        <ul>
+          <li>Google Chrome</li>
+          <li>Microsoft Edge</li>
+          <li>Mozilla Firefox</li>
+          <li>Safari</li>
+          <li>Opera</li>
+        </ul>
+
+        <p>
+          When you enter a website address, the browser contacts
+          the appropriate server, receives website files and
+          turns those files into the page you see.
+        </p>
+
+        <p>
+          The browser also lets you click links, fill in forms,
+          play videos and interact with website features.
+        </p>
+
+      </section>
+
+
+      <section id="server" class="article-section">
+
+        <h2>3. What Is a Web Server?</h2>
+
+        <p>
+          A <strong>web server</strong> is a computer, or software
+          running on a computer, that responds to requests from
+          web browsers.
+        </p>
+
+        <p>
+          Website files are stored on servers so that people
+          can access them through the internet.
+        </p>
+
+        <p>A website may contain files such as:</p>
+
+        <ul>
+          <li>HTML files that provide the page structure.</li>
+          <li>CSS files that control the appearance.</li>
+          <li>JavaScript files that add interactive features.</li>
+          <li>Images, videos, fonts and other resources.</li>
+        </ul>
+
+        <p>
+          A hosting company provides space and resources on
+          servers so that website owners can publish their sites.
+        </p>
+
+        <p>
+          You can learn more in our guide:
+          <a href="hosting.html">What Is Web Hosting?</a>
+        </p>
+
+      </section>
+
+
+      <section id="request" class="article-section">
+
+        <h2>4. What Happens When You Open a Website?</h2>
+
+        <p>
+          Let's imagine that you type
+          <strong>example.com</strong> into your browser.
+          Here is a simplified explanation of what happens next.
+        </p>
+
+        <div class="hosting-diagram">
+
+          <div class="diagram-step">
+            <strong>Step 1: You enter an address</strong>
+            <span>
+              You type a website address into your browser.
+            </span>
+          </div>
+
+          <div class="diagram-arrow">↓</div>
+
+          <div class="diagram-step">
+            <strong>Step 2: The browser finds the server</strong>
+            <span>
+              The browser uses the domain and DNS to locate
+              the correct server.
+            </span>
+          </div>
+
+          <div class="diagram-arrow">↓</div>
+
+          <div class="diagram-step">
+            <strong>Step 3: The browser sends a request</strong>
+            <span>
+              It asks the server for the page and its resources.
+            </span>
+          </div>
+
+          <div class="diagram-arrow">↓</div>
+
+          <div class="diagram-step">
+            <strong>Step 4: The server sends files</strong>
+            <span>
+              The server responds with the requested files
+              and information.
+            </span>
+          </div>
+
+          <div class="diagram-arrow">↓</div>
+
+          <div class="diagram-step">
+            <strong>Step 5: The browser displays the website</strong>
+            <span>
+              The browser processes the files and displays
+              the finished page.
+            </span>
+          </div>
+
+        </div>
+
+        <p>
+          This exchange happens very quickly, often in a fraction
+          of a second. More resources, such as images and scripts,
+          may need to be requested separately.
+        </p>
+
+      </section>
+
+
+      <section id="html-css-js" class="article-section">
+
+        <h2>5. HTML, CSS and JavaScript: The Building Blocks</h2>
+
+        <p>
+          Most websites use three important technologies:
+          HTML, CSS and JavaScript.
+        </p>
+
+        <p>Each one has a different job.</p>
+
+        <div class="comparison-box">
+
+          <h3>HTML — The Structure</h3>
+
+          <p>
+            HTML defines the content and structure of a page.
+            It tells the browser which parts are headings,
+            paragraphs, images, links and other elements.
+          </p>
+
+          <h3>CSS — The Appearance</h3>
+
+          <p>
+            CSS controls how a website looks. It defines
+            colors, fonts, spacing, layouts, borders and
+            how the page adapts to different screen sizes.
+          </p>
+
+          <h3>JavaScript — The Interaction</h3>
+
+          <p>
+            JavaScript adds behavior and interactivity.
+            It can open menus, validate forms, update content
+            and respond to user actions.
+          </p>
+
+        </div>
+
+        <p>
+          Imagine a simple house:
+        </p>
+
+        <ul>
+          <li><strong>HTML</strong> is the structure of the house.</li>
+          <li><strong>CSS</strong> is the paint and decoration.</li>
+          <li><strong>JavaScript</strong> makes some features work.</li>
+        </ul>
+
+        <p>
+          You can explore these technologies in our upcoming
+          guide about <a href="html-css.html">HTML and CSS</a>.
+        </p>
+
+      </section>
+
+
+      <section id="domain-dns" class="article-section">
+
+        <h2>6. How Do Domain Names and DNS Work?</h2>
+
+        <p>
+          Computers communicate using IP addresses. An IP address
+          identifies a device or server on a network.
+        </p>
+
+        <p>
+          However, remembering a number for every website would
+          be difficult. That is why we use domain names, such as
+          <strong>example.com</strong>.
+        </p>
+
+        <p>
+          The <strong>Domain Name System (DNS)</strong> helps
+          translate domain names into the IP addresses that
+          computers use to find servers.
+        </p>
+
+        <p>A simplified DNS process looks like this:</p>
+
+        <div class="hosting-diagram">
+
+          <div class="diagram-step">
+            <strong>You enter a domain name</strong>
+            <span>For example: example.com</span>
+          </div>
+
+          <div class="diagram-arrow">↓</div>
+
+          <div class="diagram-step">
+            <strong>DNS looks up the address</strong>
+            <span>
+              It finds the IP address associated with the domain.
+            </span>
+          </div>
+
+          <div class="diagram-arrow">↓</div>
+
+          <div class="diagram-step">
+            <strong>The browser contacts the server</strong>
+            <span>
+              It uses the address to connect to the right server.
+            </span>
+          </div>
+
+        </div>
+
+        <p>
+          Learn more in our article:
+          <a href="domain-name.html">What Is a Domain Name?</a>
+        </p>
+
+      </section>
+
+
+      <section id="https" class="article-section">
+
+        <h2>7. What Is HTTPS?</h2>
+
+        <p>
+          When you visit a website, information travels between
+          your browser and the website's server.
+        </p>
+
+        <p>
+          <strong>HTTPS</strong> is a secure version of HTTP.
+          It uses encryption to help protect information
+          exchanged between your browser and the server.
+        </p>
+
+        <p>
+          This is especially important when people enter passwords,
+          personal details or payment information.
+        </p>
+
+        <p>
+          You can often recognize an HTTPS website because
+          its address begins with <strong>https://</strong>.
+        </p>
+
+        <div class="article-note">
+          <strong>Important:</strong>
+          HTTPS helps protect the connection, but it does not
+          automatically mean that a website is trustworthy.
+          You should still check that a website is legitimate
+          before sharing personal information.
+        </div>
+
+      </section>
+
+
+      <section id="put-together" class="article-section">
+
+        <h2>8. How Does Everything Connect?</h2>
+
+        <p>
+          Now let's put all the pieces together.
+        </p>
+
+        <p>
+          To make a website available on the internet, you
+          generally need:
+        </p>
+
+        <ol>
+          <li>
+            <strong>Website files:</strong>
+            HTML, CSS, JavaScript, images and other resources.
+          </li>
+
+          <li>
+            <strong>Web hosting:</strong>
+            A server where your website files are stored.
+          </li>
+
+          <li>
+            <strong>A domain name:</strong>
+            An easy-to-remember address that visitors can use
+            to reach your website.
+          </li>
+
+          <li>
+            <strong>A browser:</strong>
+            The program visitors use to open and view your site.
+          </li>
+        </ol>
+
+        <div class="article-note">
+          You can build a website on your own computer before
+          publishing it. Hosting makes it accessible to other
+          people over the internet.
+        </div>
+
+      </section>
+
+
+      <section id="summary" class="article-section">
+
+        <h2>9. Key Takeaways</h2>
+
+        <p>
+          A website may look simple when you open it, but several
+          technologies work together behind the scenes.
+        </p>
+
+        <ul>
+          <li>A browser lets you visit and interact with websites.</li>
+          <li>A server stores or delivers website resources.</li>
+          <li>HTML creates the structure of a web page.</li>
+          <li>CSS controls its appearance.</li>
+          <li>JavaScript adds interactive behavior.</li>
+          <li>DNS helps browsers find the correct server.</li>
+          <li>HTTPS helps protect information exchanged online.</li>
+        </ul>
+
+        <p>
+          Once you understand these basics, learning how to
+          build your own website becomes much easier.
+        </p>
+
+      </section>
+
+
+      <!-- NEXT GUIDE -->
+      <div class="next-guide">
+
+        <span class="article-category">NEXT STEP</span>
+
+        <h2>Ready to Learn More?</h2>
+
+        <p>
+          Now that you understand how websites work,
+          discover the technologies used to build them.
+        </p>
+
+        <a href="html-css.html" class="button button-primary">
+          Learn About HTML and CSS
+        </a>
+
+      </div>
+
+    </article>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <a href="index.html" class="logo">
+        <span class="logo-icon">P</span>
+        <span>The Practical Website</span>
+      </a>
+
+      <p>
+        Simple, practical guides to building better websites.
+      </p>
+
+      <span class="footer-copyright">
+        © 2026 The Practical Website
+      </span>
+
+    </div>
+  </footer>
+  <button class="back-to-top" id="backToTop" aria-label="Go to top">
+    ↑ Go Up
+  </button>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 300) {
+        backToTop.classList.add("show");
+      } else {
+        backToTop.classList.remove("show");
+      }
+    });
+
+    backToTop.addEventListener("click", function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
+</body>
+
+</html>
